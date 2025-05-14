@@ -33,3 +33,22 @@ A full-stack blogging platform built with **React**, **Vite**, **Appwrite**, and
 ```bash
 git clone https://github.com/aashu2709/RenderBlog.git
 cd RenderBlog
+```
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+### 3. Configure environment variables
+Create a .env file in the root directory and add the following variables with your actual Appwrite and TinyMCE credentials:
+```bash
+VITE_APPWRITE_URL=https://<your-appwrite-endpoint>
+VITE_APPWRITE_PROJECT_ID=<your-project-id>
+VITE_APPWRITE_DATABASE_ID=<your-database-id>
+VITE_APPWRITE_COLLECTION_ID=<your-collection-id>
+VITE_APPWRITE_BUCKET_ID=<your-bucket-id>
+VITE_TINYMCE_API_KEY=<your-tinymce-api-key>
+```
+⚠️ Ensure your Appwrite project allows connections from your development URL (e.g. http://localhost:5173) by setting the platform under Project Settings → Platforms.
