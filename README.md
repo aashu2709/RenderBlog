@@ -52,3 +52,33 @@ VITE_APPWRITE_BUCKET_ID=<your-bucket-id>
 VITE_TINYMCE_API_KEY=<your-tinymce-api-key>
 ```
 ⚠️ Ensure your Appwrite project allows connections from your development URL (e.g. http://localhost:5173) by setting the platform under Project Settings → Platforms.
+
+### 4. Run the development server
+```bash
+npm run dev
+```
+Visit http://localhost:5173 to see the app running locally.
+
+📁 Folder Structure
+```bash
+Copy
+Edit
+src/
+│
+├── appwrite/         # Appwrite service configuration (auth, database, storage)
+├── components/       # Reusable UI components (Input, Button, Editor, etc.)
+├── pages/            # Route components (Home, Login, Signup, CreatePost, etc.)
+├── store/            # Redux Toolkit configuration
+├── utils/            # Utility helpers and constants
+└── App.jsx           # Main app setup with routing
+```
+
+🙋‍♂️ Author
+Ashutosh Pal
+📧 aashu1902ap@gmail.com
+🔗 LinkedIn
+💻 GitHub
+
+📜 License
+This project is licensed under the MIT License.
+
